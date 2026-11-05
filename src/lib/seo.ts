@@ -1,0 +1,11 @@
+// Har page ka title/description banane ka chhota helper
+export const pageHead = (title: string, description: string) => () => ({
+  meta: [
+    { title: `${title} — UrNinja OS` },
+    { name: "description", content: description },
+    { property: "og:title", content: `${title} — UrNinja OS` },
+    { property: "og:description", content: description },
+    { property: "og:type", content: "website" },
+    { name: "twitter:card", content: "summary" },
+  ],
+});
